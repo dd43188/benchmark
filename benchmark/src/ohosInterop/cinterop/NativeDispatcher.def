@@ -1,0 +1,18 @@
+package = com.tencent.tmm.ohos.skikobridge.dispatcher
+headers = compose_dispatcher.h skiko_bridge_touch_event.h
+
+---
+#include "napi/native_api.h"
+#include "js_native_api.h"
+#include "js_native_api_types.h"
+#include "hilog/log.h"
+#include <dlfcn.h>
+
+int getAddress(long address) {
+  Dl_info info;
+  if (dladdr(address, &info) == 0) return address;
+  void* dli_fbase = info.dli_fbase;
+  void* this_func = (void*)address;
+  int fn_addr = (char *) this_func - (char *) dli_fbase - 1;
+  return fn_addr;
+}

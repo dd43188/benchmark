@@ -1,0 +1,5 @@
+package = platform.myohos
+headers = rawfile/raw_dir.h rawfile/raw_file_c.h rawfile/raw_file_manager.h \
+dispatcher/compose_dispatcher.h \
+dispatcher/skiko_bridge_touch_event.h \
+dispatcher/types.h

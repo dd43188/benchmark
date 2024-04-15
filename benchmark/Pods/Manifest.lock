@@ -1,0 +1,16 @@
+PODS:
+  - benchmark (1.0)
+
+DEPENDENCIES:
+  - benchmark (from `../benchmark`)
+
+EXTERNAL SOURCES:
+  benchmark:
+    :path: "../benchmark"
+
+SPEC CHECKSUMS:
+  benchmark: 83db821a65917947e4fc846dcc5efacbdae19783
+
+PODFILE CHECKSUM: afb28091aca3290127cbd4a8f477f05b6131a247
+
+COCOAPODS: 1.12.1
